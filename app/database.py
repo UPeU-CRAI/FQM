@@ -46,15 +46,12 @@ class Mixin:
 
 
 class TicketsMixin:
-    @property
-    def display_text(self):
-        display_settings = Display_store.query.first()
-        always_show_ticket_number = display_settings.always_show_ticket_number
+    def get_display_text(self, show_ticket_number, omit_prefix):
         name_and_or_number = f'{getattr(self, "number", "")}'
-        prefix = f'{self.office.prefix} ' if display_settings.prefix else ''
+        prefix = '' if omit_prefix else f'{self.office.prefix} '
 
         if self.n:  # NOTE: registered ticket
-            if always_show_ticket_number:
+            if show_ticket_number:
                 name_and_or_number = f'{prefix.strip()}{name_and_or_number} {self.name}'
             else:
                 name_and_or_number = f'{prefix}{self.name}'
@@ -63,6 +60,24 @@ class TicketsMixin:
 
         return name_and_or_number
 
+    @property
+    def display_text(self):
+        display_settings = Display_store.query.first()
+        return self.get_display_text(
+            show_ticket_number=display_settings.always_show_ticket_number,
+            omit_prefix=not display_settings.prefix,
+        )
+
+    @property
+    def display_text_for_feed(self):
+        display_settings = Display_store.query.first()
+        ticket_text = self.get_display_text(
+            show_ticket_number=display_settings.always_show_ticket_number,
+            omit_prefix=display_settings.show_office_name,
+        )
+
+        return f"{self.office.display_text} <br> {ticket_text}"\
+            if display_settings.show_office_name else ticket_text
 
 class Office(db.Model, Mixin):
     __tablename__ = "offices"
@@ -755,6 +770,7 @@ class Display_store(db.Model, Mixin):
     always_show_ticket_number = db.Column(db.Boolean, default=False)
     wait_for_announcement = db.Column(db.Boolean)
     hide_ticket_index = db.Column(db.Boolean)
+    show_office_name = db.Column(db.Boolean)
     # adding repeat announcement value
     r_announcement = db.Column(db.Boolean)
     akey = db.Column(db.Integer, db.ForeignKey("media.id",
@@ -778,7 +794,8 @@ class Display_store(db.Model, Mixin):
                  announce="en-us", ikey=4, vkey=None, akey=None,
                  anr=2, anrt="each", bgcolor="rgb(0,0,0)", tmp=1,
                  wait_for_announcement=True,
-                 hide_ticket_index=False):
+                 hide_ticket_index=False,
+                 show_office_name=False):
         self.id = 0
         self.tfont = tfont
         self.hfont = hfont
@@ -812,6 +829,7 @@ class Display_store(db.Model, Mixin):
         self.akey = akey
         self.wait_for_announcement = wait_for_announcement
         self.hide_ticket_index = hide_ticket_index
+        self.show_office_name = show_office_name
 
 
 # -- Slides storage table

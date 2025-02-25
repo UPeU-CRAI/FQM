@@ -443,6 +443,7 @@ def displayscreen_c(stab):
         touch_s.always_show_ticket_number = form.always_show_ticket_number.data
         touch_s.wait_for_announcement = form.wait_for_announcement.data
         touch_s.hide_ticket_index = form.hide_ticket_index.data
+        touch_s.show_office_name = form.show_office_name.data
 
         if not form.background.data:
             touch_s.bgcolor = form.bgcolor.data
@@ -501,6 +502,7 @@ def displayscreen_c(stab):
         form.always_show_ticket_number.data = touch_s.always_show_ticket_number
         form.wait_for_announcement.data = touch_s.wait_for_announcement
         form.hide_ticket_index.data = touch_s.hide_ticket_index
+        form.show_office_name.data = touch_s.show_office_name
 
         if touch_s.bgcolor[:3] == 'rgb':
             form.bgcolor.data = touch_s.bgcolor
