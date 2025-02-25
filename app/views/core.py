@@ -365,7 +365,7 @@ def feed(office_id=None):
         waiting_tickets = (data.Serial.get_waiting_list_tickets(office_id) + ([None] * 9))[:9]
         tickets_parameters = {
             f'w{_index + 1}':
-            f'{_resolve_ticket_index(_index)}{ticket.display_text}' if ticket else empty_text
+            f'{_resolve_ticket_index(_index)}{ticket.display_text_for_feed}' if ticket else empty_text
             for _index, ticket in enumerate(waiting_tickets)}
 
     # NOTE: Add last 10 processed tickets, for supported template.
@@ -373,7 +373,7 @@ def feed(office_id=None):
         processed_tickets = (data.Serial.get_processed_tickets(office_id, offset=1) + ([None] * 9))[:9]
         tickets_parameters.update({
             f'p{_index + 1}':
-            f'{_resolve_ticket_index(_index)}{ticket.display_text}' if ticket else empty_text
+            f'{_resolve_ticket_index(_index)}{ticket.display_text_for_feed}' if ticket else empty_text
             for _index, ticket in enumerate(processed_tickets)})
 
     # NOTE: Ensure `tickets_parameters` last value is as distinct as the `current_ticket`

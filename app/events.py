@@ -20,7 +20,7 @@ def setup_events(db):
         (Serial, 'update'): serial_funcs,
         (Serial, 'insert'): serial_funcs,
         (Serial, 'delete'): serial_funcs,
-        (Display_store, 'update'): [touch, display],
+        (Display_store, 'update'): [touch, display, *serial_funcs],
         (Aliases, 'update'): [touch, display],
         (Settings, 'update'): [touch],
         (Touch_store, 'update'): [touch],

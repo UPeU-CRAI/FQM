@@ -3010,6 +3010,13 @@
         "fr": "Afficher les en-t\u00eates dans le fichier CSV:",
         "it": "Mostra intestazioni nel file CSV:"
     },
+    "Show office name:": {
+        "ar": "\u0639\u0631\u0636 \u0627\u0633\u0645 \u0627\u0644\u0645\u0643\u062a\u0628:",
+        "en": "Show office name:",
+        "es": "Mostrar nombre de la oficina:",
+        "fr": "Nom du bureau de show:",
+        "it": "Mostra il nome dell'ufficio:"
+    },
     "Single Row Queuing": {
         "ar": "\u0635\u0641 \u0648\u0627\u062d\u062f \u0641\u064a \u0642\u0627\u0626\u0645\u0629 \u0627\u0646\u062a\u0638\u0627\u0631",
         "en": "Single Row Queuing",
