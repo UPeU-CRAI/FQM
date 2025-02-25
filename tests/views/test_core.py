@@ -642,6 +642,39 @@ def test_feed_stream_tickets_preferences_enabled(c):
 
 
 @pytest.mark.usefixtures('c')
+def test_feed_stream_tickets_preferences_and_show_office_name_enabled(c):
+    c.get('/pull', follow_redirects=True)  # Initial pull to fill stacks
+
+    display_settings = Display_store.query.first()
+    display_settings.prefix = True
+    display_settings.always_show_ticket_number = True
+    display_settings.show_office_name = True  # Enable show office name preference
+    display_settings.tmp = 3
+    db.session.commit()
+
+    tickets = Serial.get_waiting_list_tickets(limit=8)
+    processed_tickets = Serial.get_processed_tickets(limit=8, offset=1)
+    current_ticket = Serial.get_last_pulled_ticket()
+
+    response = c.get('/feed', follow_redirects=True)
+
+    assert response.status == '200 OK'
+    assert response.json.get('con') == current_ticket.office.display_text
+    assert response.json.get('cott') == current_ticket.task.name
+    assert response.json.get('cot') == current_ticket.display_text
+
+    for i, ticket in enumerate(tickets):
+        assert ticket.name in response.json.get(f'w{i + 1}')
+        assert str(ticket.number) in response.json.get(f'w{i + 1}')
+        assert ticket.office.name in response.json.get(f'w{i + 1}')
+
+    for i, ticket in enumerate(processed_tickets):
+        assert ticket.name in response.json.get(f'p{i + 1}')
+        assert str(ticket.number) in response.json.get(f'p{i + 1}')
+        assert ticket.office.name in response.json.get(f'p{i + 1}')  # Check for office name
+
+
+@pytest.mark.usefixtures('c')
 def test_feed_office_with_preferences_enabled(c):
     c.get('/pull', follow_redirects=True)  # NOTE: initial pull to fill stacks
 
