@@ -23,21 +23,21 @@
 </a>
 </p>
 
-<h3 align='center'> Free Queue Manager (beta). Un sistema de gesti\u00f3n de filas basado en la web construido con Python Flask, Bootstrap y jQuery. </h3>
+<h3 align='center'> Free Queue Manager (beta). Un sistema de gestión de filas basado en la web construido con Python Flask, Bootstrap y jQuery. </h3>
 <hr />
 
-### Caracter\u00edsticas:
+### Características:
 
 - Soporta impresoras POS USB en los principales sistemas operativos.
 - Interfaces personalizables.
 - Anuncios mediante sintetizador de voz.
 
-### Instalaci\u00f3n:
+### Instalación:
 
-#### - Desde el c\u00f3digo fuente:
+#### - Desde el código fuente:
 
-- Configuraci\u00f3n con Docker para producci\u00f3n, sigue esta [gu\u00eda](./docs/setup.md#1-docker-setup)
-- Configuraci\u00f3n est\u00e1ndar con Python (legado), sigue esta [gu\u00eda](./docs/setup.md#2-standard-python-setup)
+- Configuración con Docker para producción, sigue esta [guía](./docs/setup.md#1-docker-setup)
+- Configuración estándar con Python (legado), sigue esta [guía](./docs/setup.md#2-standard-python-setup)
 
 #### - Con ejecutable [ya no soportado]:
 
@@ -48,20 +48,20 @@ Puedes encontrar un ejecutable para tu sistema operativo en:
 - [Sourceforge](https://sourceforge.net/projects/free-queue-manager/)
 
 
-#### - Migraci\u00f3n de la base de datos:
+#### - Migración de la base de datos:
 
-Desde la versi\u00f3n `0.7` es posible migrar los datos generados en versiones previas a las nuevas.
+Desde la versión `0.7` es posible migrar los datos generados en versiones previas a las nuevas.
 
-- Debes copiar el archivo `data.sqlite` de la carpeta principal del proyecto a la carpeta de la nueva versi\u00f3n.
-- Si has subido archivos de `Multimedia` en tu configuraci\u00f3n previa, aseg\u00farte de copiarlos manualmente a la nueva carpeta `FQM/static/multimedia/`.
+- Debes copiar el archivo `data.sqlite` de la carpeta principal del proyecto a la carpeta de la nueva versión.
+- Si has subido archivos de `Multimedia` en tu configuración previa, asegúrate de copiarlos manualmente a la nueva carpeta `FQM/static/multimedia/`.
 
-**Aseg\u00farate de realizar la migraci\u00f3n antes de ejecutar la nueva versi\u00f3n del sistema**.
+**Asegúrate de realizar la migración antes de ejecutar la nueva versión del sistema**.
 
-### Documentaci\u00f3n:
+### Documentación:
 
-- [Gu\u00eda de usuario \u00fatil pero desactualizada](https://fqms.github.io/images/user_guide.pdf).
-- [\u00bfC\u00f3mo a\u00f1adir soporte para mi idioma?](docs/localization.md)
-- [\u00bfC\u00f3mo agregar configuraciones y personalizaciones adicionales?](docs/settings.md)
+- [Guía de usuario útil pero desactualizada](https://fqms.github.io/images/user_guide.pdf).
+- [¿Cómo añadir soporte para mi idioma?](docs/localization.md)
+- [¿Cómo agregar configuraciones y personalizaciones adicionales?](docs/settings.md)
 
 <br />
 <p align='center'>
@@ -70,6 +70,6 @@ Desde la versi\u00f3n `0.7` es posible migrar los datos generados en versiones p
 
 ### Historial de versiones
 
-| Versi\u00f3n | Descripci\u00f3n |
+| Versión | Descripción |
 |-----------|-------------|
-| v0.0.1    | Versi\u00f3n inicial |
+| v0.0.1    | Versión inicial |
