@@ -26,7 +26,7 @@
     },
     "\nTickets ahead : ": {
         "en": "Tickets ahead :",
-        "es": "Boletos con anticipaci\u00f3n:",
+        "es": "Tickets en cola:",
         "fr": "tickets \u00e0 venir:",
         "it": "Biglietti in anticipo:"
     },
@@ -1030,7 +1030,7 @@
     "Error: Office selected does not exist!": {
         "ar": "\u062e\u0637\u0623: \u0645\u0643\u062a\u0628 \u0627\u0644\u0645\u062d\u062f\u062f \u0644\u0627 \u0648\u062c\u0648\u062f \u0644\u0647!",
         "en": "Error: Office selected does not exist!",
-        "es": "Error: Oficina seleccionado no existe!",
+        "es": "Error: la oficina seleccionada no existe!",
         "fr": "Erreur: Le bureau choisi n'existe pas!",
         "it": "Errore: Ufficio selezionato non esiste!"
     },
@@ -2420,7 +2420,7 @@
     "Pulled": {
         "ar": "\u0633\u062d\u0628\u062a",
         "en": "Pulled",
-        "es": "Tirado",
+        "es": "Atendido",
         "fr": "Appel\u00e9",
         "it": "tirato"
     },
@@ -3334,7 +3334,7 @@
     },
     "Tickets ahead : ": {
         "en": "Tickets ahead : ",
-        "es": "Billetes antes : ",
+        "es": "Tickets en cola : ",
         "fr": "En-t\u00eate des tickets : ",
         "it": "biglietti in anticipo : "
     },
@@ -3694,14 +3694,14 @@
     "Wait for announcement to finish:": {
         "ar": "\u0627\u0646\u062a\u0638\u0631 \u0627\u0644\u0627\u0639\u0644\u0627\u0646 \u0627\u0644\u0649 \u0627\u0644\u0646\u0647\u0627\u064a\u0629:",
         "en": "Wait for announcement to finish:",
-        "es": "Esperar a que el anuncio hasta el final:",
+        "es": "Esperar a que finalice el anuncio:",
         "fr": "Attendez que l'annonce se finisse:",
         "it": "Attendere che l'annuncio alla fine:"
     },
     "Waiting": {
         "ar": "\u0627\u0646\u062a\u0638\u0627\u0631",
         "en": "Waiting",
-        "es": "Esperando",
+        "es": "En espera",
         "fr": "Attendre",
         "it": "In attesa"
     },
@@ -4406,7 +4406,7 @@
     "the role is disabled, it will be enabled once you add a new office": {
         "ar": "\u0647\u0648 \u062f\u0648\u0631 \u0627\u0644\u0645\u0639\u0648\u0642\u064a\u0646\u060c \u0641\u0625\u0646\u0647 \u0633\u064a\u062a\u0645 \u062a\u0645\u0643\u064a\u0646 \u0628\u0645\u062c\u0631\u062f \u0625\u0636\u0627\u0641\u0629 \u0645\u0643\u062a\u0628\u0627 \u062c\u062f\u064a\u062f\u0627",
         "en": "the role is disabled, it will be enabled once you add a new office",
-        "es": "el papel est\u00e1 desactivado, se activar\u00e1 una vez que se agrega una nueva oficina",
+        "es": "el rol está desactivado; se habilitará cuando se agregue una nueva oficina",
         "fr": "Le r\u00f4le est d\u00e9sactiv\u00e9, il sera activ\u00e9 quand le premier bureau sera ajout\u00e9",
         "it": "il ruolo \u00e8 disattivato, esso verr\u00e0 attivato una volta che si aggiunge un nuovo ufficio"
     },
@@ -4416,7 +4416,7 @@
     "the role is not enabled, it will be enabled once you add a new office": {
         "ar": "\u0644\u0645 \u064a\u062a\u0645 \u062a\u0645\u0643\u064a\u0646 \u062f\u0648\u0631\u060c \u0641\u0625\u0646\u0647 \u0633\u064a\u062a\u0645 \u062a\u0645\u0643\u064a\u0646 \u0628\u0645\u062c\u0631\u062f \u0625\u0636\u0627\u0641\u0629 \u0645\u0643\u062a\u0628\u0627 \u062c\u062f\u064a\u062f\u0627",
         "en": "the role is not enabled, it will be enabled once you add a new office",
-        "es": "el papel no est\u00e1 activado, s\u00f3lo se activar\u00e1 una vez que se agrega una nueva oficina",
+        "es": "el rol no está habilitado; se habilitará cuando se agregue una nueva oficina",
         "fr": "Le r\u00f4le est d\u00e9sactiv\u00e9, il sera activ\u00e9 quand le premier bureau sera ajout\u00e9",
         "it": "il ruolo non \u00e8 abilitata, verr\u00e0 attivato una volta che si aggiunge un nuovo ufficio"
     },

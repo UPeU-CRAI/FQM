@@ -72,4 +72,5 @@ Desde la versión `0.7` es posible migrar los datos generados en versiones previ
 
 | Versión | Descripción |
 |-----------|-------------|
+| v1.0.0    | Correcciones de traducciones al español para la interfaz |
 | v0.0.1    | Versión inicial |
