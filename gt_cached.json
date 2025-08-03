@@ -480,6 +480,7 @@
     },
     "Background tasks : gives you the ability to to automate some predefined repetitive but needed processes. Changes on the settings will effect ongoing background tasks, and will reset them accordingly.": {
         "en": "Background tasks : gives you the ability to to automate some predefined repetitive but needed processes. Changes on the settings will effect ongoing background tasks, and will reset them accordingly.",
+        "es": "Tareas de fondo: le brinda la capacidad de automatizar algunos procesos repetitivos pero necesarios predefinidos. Los cambios en la configuraci\u00f3n afectar\u00e1n las tareas de fondo continuas y las restablecer\u00e1n en consecuencia.",
         "fr": "T\u00e2ches d'arri\u00e8re-plan: vous donne la possibilit\u00e9 d'automatiser certains processus r\u00e9p\u00e9titifs mais n\u00e9cessaires. Les modifications des param\u00e8tres affecteront les t\u00e2ches de fond en cours et les r\u00e9initialiseront en cons\u00e9quence."
     },
     "Background tasks: allows you to automate some repetitive but needed processes": {
@@ -883,10 +884,12 @@
     },
     "Enter a text header : ": {
         "en": "Enter a text header : ",
+        "es": "Ingrese un encabezado de texto:",
         "fr": "Entrez un en-t\u00eate de texte:"
     },
     "Enter a text sub-header : ": {
         "en": "Enter a text sub-header : ",
+        "es": "Ingrese un subtarrador de texto:",
         "fr": "Entrez un sous-chef de texte:"
     },
     "Enter a title :": {
@@ -3277,6 +3280,7 @@
     },
     "The place where all multimedia files meant to be uploaded to, for the purpose of later use in other components which has the option to incorporate the uploaded multimedia files like jpg backgrounds instead of statically colored backgrounds and wav audio files to be incorporated withe visual notification message as well as png images to attach a transparent logo to slides for example.": {
         "en": "The place where all multimedia files meant to be uploaded to, for the purpose of later use in other components which has the option to incorporate the uploaded multimedia files like jpg backgrounds instead of statically colored backgrounds and wav audio files to be incorporated withe visual notification message as well as png images to attach a transparent logo to slides for example.",
+        "es": "El lugar donde todos los archivos multimedia pretend\u00edan cargarse, con el prop\u00f3sito de usar m\u00e1s tarde en otros componentes que tiene la opci\u00f3n de incorporar los archivos multimedia cargados como fondos JPG en lugar de fondos de color est\u00e1ticamente y archivos de audio WAV para incorporarse con un mensaje de notificaci\u00f3n visual visual, as\u00ed como im\u00e1genes de PNG para adjuntar un logotipo de transparentes a los traficos por ejemplo.",
         "fr": "L'endroit o\u00f9 tous les fichiers multim\u00e9dias destin\u00e9s \u00e0 \u00eatre t\u00e9l\u00e9charg\u00e9s, dans le but d'une utilisation ult\u00e9rieure, dans d'autres composants, qui a la possibilit\u00e9 d'incorporer les fichiers multim\u00e9dias t\u00e9l\u00e9charg\u00e9s comme les arri\u00e8re-plans JPG au lieu d'arri\u00e8re-plans de couleur statique et de fichiers audio wav \u00e0 incorporer avec un message de notification visuelle ainsi que des images PNG pour attacher un logo transparent aux diapositives par exemple."
     },
     "Third Template": {

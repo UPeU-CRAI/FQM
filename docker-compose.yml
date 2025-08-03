@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build: .
-    command: tail -F app/__init__.py
+    command: gunicorn -b 0.0.0.0:5050 app:app
     restart: on-failure
     ports:
       - 5050:5050
